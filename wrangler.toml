@@ -1,6 +1,6 @@
 # Santri-Pay - Cloudflare Workers
 name = "santri-pay"
-main = "./dist/server.js"
+main = ".output/server/index.mjs"
 compatibility_date = "2024-07-01"
 
 # D1 Database Binding
