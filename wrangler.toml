@@ -9,10 +9,16 @@ binding = "DB"
 database_name = "santri-pay-dev"
 database_id = "719d78ea-4055-404f-8285-da32af46e164"
 
-[env.production]
-name = "santri-pay"
-
-[[env.production.d1_databases]]
-binding = "DB"
+# Production D1 Database
+[[d1_databases]]
+binding = "DB_PROD"
 database_name = "santri-pay-prod"
 database_id = "20143140-fb43-49d7-8c4c-f6ea0c39e897"
+
+# Production environment disabled - build deploy command instead
+# [env.production]
+# name = "santri-pay"
+# [[env.production.d1_databases]]
+# binding = "DB"
+# database_name = "santri-pay-prod"
+# database_id = "20143140-fb43-49d7-8c4c-f6ea0c39e897"
