@@ -143,11 +143,8 @@ jobs:
       - name: Install Wrangler
         run: npm install -g wrangler
 
-      - name: Download build artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: dist
-          path: .
+      - name: Build for Cloudflare
+        run: npm install && npm run build
 
       - name: Create or Use Production D1 Database
         id: create-db
